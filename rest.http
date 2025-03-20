@@ -1,0 +1,21 @@
+POST http://localhost:8080/notifications
+Content-Type: application/json
+
+{
+  "chat_id": 111,
+  "topic_id": 0,
+  "message": "test one time",
+  "date_time_schedule": "2025-03-20 21:20:00"
+}
+
+###
+
+POST http://localhost:8080/notifications
+Content-Type: application/json
+
+{
+  "chat_id": 111,
+  "topic_id": 0,
+  "message": "test schedule",
+  "cron_schedule": "* * * * *"
+}
